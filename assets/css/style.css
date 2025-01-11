@@ -100,6 +100,7 @@ body{
   margin-left: 2%;
   margin-right: 4%;
   background-size: 100px;
+  background-image: none;
 }
 
 .headergap{
