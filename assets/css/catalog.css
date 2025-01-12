@@ -44,6 +44,13 @@
     background-color: #6399bfa8;
 }
 
+
+.cataseason{
+  display: block;
+  width: 50%;
+}
+.seasonitem{border: none !important;}
+
 .listitem{
     grid-column: span 1; 
     grid-row: span 1;
@@ -231,11 +238,18 @@
         text-align: center;
         border-radius: 15px;
     }
+
+    .cataseason{
+      display: block;
+    }
+
     .listitem{
         grid-column: span 1; 
         grid-row: span 1;
         border-style: none solid solid none !important;
     }
+
+    .seasonitem{border: none !important;}
 
     .itemimg{
         width: 125px;
@@ -243,7 +257,7 @@
     .listitemlast{
         border-style: none none none none;
     }
-    .listitem:nth-last-of-type(odd){
+    .listitem:nth-last-of-type(even){
         border-style: none none solid none !important;
     }
     .listbtn{
