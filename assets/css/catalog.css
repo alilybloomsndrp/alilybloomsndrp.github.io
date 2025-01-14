@@ -237,6 +237,8 @@
         width: 100%;
         text-align: center;
         border-radius: 15px;
+        background-color: #6399bf;
+        backdrop-filter: none;
     }
 
     .cataseason{
