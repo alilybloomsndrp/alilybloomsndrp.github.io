@@ -38,7 +38,7 @@
     margin: auto;
     display: grid; 
     width: 80%;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(2, 1fr); 
     grid-template-rows: repeat(1, 1fr); 
     padding: 8px; 
     background-color: #6399bfa8;
@@ -49,23 +49,27 @@
   display: block;
   width: 50%;
 }
-.seasonitem{border: none !important;}
 
 .listitem{
     grid-column: span 1; 
     grid-row: span 1;
     text-align: center;
     border-color: #000;
-    border-width: 2px;
-    border-style: none none solid none ;
+    border-width: 1px !important;
+    border-bottom: solid;
 }
 
-.listitemmid{
-    border-style: none solid solid solid;
+.listitem-season{
+  border-style: none !important;
 }
 
-.lastitem{
-  border-style: none solid none none;
+.listitem:nth-of-type(odd){
+  border-width: 1px;
+  border-style: none solid solid none;
+}
+
+.listitem-bottom{
+  border-bottom: none !important;
 }
 
 .listitem button{
@@ -79,7 +83,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    background: #6398bf;
+    background: #dce0bf;
     font-family: 'Fiona-Regular';
     font-size: 28px;
     box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
@@ -93,7 +97,7 @@
     content: " ";
     width: 0%;
     height: 100%;
-    background: #dce0bf;
+    background: #6398bf;
     position: absolute;
     transition: all 0.4s ease-in-out;
     right: 0;
@@ -227,18 +231,16 @@
     margin-bottom: 0px;
     margin-top: 0px;
   }
-
+  
 @media (max-width: 800px){
     .cataloglist{
         padding: 0px; 
         grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: repeat(2, 1fr); 
+        grid-template-rows: repeat(1, 1fr); 
         margin: auto;
         width: 100%;
         text-align: center;
         border-radius: 15px;
-        background-color: #6399bf;
-        backdrop-filter: none;
     }
 
     .cataseason{
@@ -248,23 +250,20 @@
     .listitem{
         grid-column: span 1; 
         grid-row: span 1;
-        border-style: none solid solid none !important;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
     }
-
-    .seasonitem{border: none !important;}
 
     .itemimg{
         width: 125px;
     }
-    .listitemlast{
-        border-style: none none none none;
-    }
-    .listitem:nth-last-of-type(even){
-        border-style: none none solid none !important;
-    }
+
     .listbtn{
         width: 90%;
-        font-size: 18px;
+        font-size: 26px;
     }
 
     .listbtn span{
