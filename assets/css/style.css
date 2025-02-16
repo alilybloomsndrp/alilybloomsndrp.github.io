@@ -1,8 +1,8 @@
 @font-face {
-    font-family: 'Fiona-Regular';
-    src: url('/assets/fonts/Fiona-Regular.woff2') format('woff2'),
-         url('/assets/fonts/Fiona-Regular.woff') format('woff'),
-         url('/assets/fonts/Fiona-Regular.ttf') format('truetype');
+    font-family: 'Melodrama-Regular';
+    src: url('/assets/fonts/Melodrama-Regular.woff2') format('woff2'),
+         url('/assets/fonts/Melodrama-Regular.woff') format('woff'),
+         url('/assets/fonts/Melodrama-Regular.ttf') format('truetype');
   }
 
 ::-webkit-scrollbar {
@@ -12,7 +12,7 @@
   }
 
 body{
-    font-family: 'Fiona-Regular';
+    font-family: 'Melodrama-Regular';
     margin: auto;
     color: black;
     background-color: #f0b7c8;
@@ -68,7 +68,7 @@ body{
 
 .main-nav a{
     text-align: center;
-	font-size: 3.7em;
+	font-size: 2.5em;
     text-decoration: none;
     color: black;
     transition: 0.275s;
@@ -192,7 +192,7 @@ body{
 .main-nav a {
 	display: block;
 	padding: 12px 0;
-	font-size: 3.7em;
+	font-size: 2.8em;
 	text-decoration: none;    
 }
 
